@@ -1,49 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Perfil Profesional</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zayuri Aponte — Portafolio</title>
+  <meta name="description" content="Portafolio estudiantil de Zayuri Aponte — estudiante responsable, creativa y comprometida con su crecimiento académico y profesional." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6c4bf6"/><stop offset="1" stop-color="#2b8cff"/></linearGradient></defs><rect rx="6" width="100%" height="100%" fill="url(#g)"/><text x="50%" y="55%" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">ZA</text></svg>
+        Zayuri Aponte
+      </a>
 
-<header>
-    <h1>Zayuri Aponte</h1>
-    <p>Mi Portal Profesional</p>
-</header>
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#profile">Perfil</a>
+        <a href="#education">Ruta Educativa</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#goals">Metas</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contacto</a>
+      </nav>
 
-<section>
-    <h2>Sobre mí</h2>
-    <p>Soy una estudiante responsable, creativa y comprometida con mi desarrollo académico y profesional.</p>
-</section>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span class="burger"></span>
+      </button>
+    </div>
+  </header>
 
-<section>
-    <h2>Perfil Profesional</h2>
-    <p>Me interesa seguir aprendiendo y desarrollar habilidades que me permitan alcanzar mis metas profesionales.</p>
-</section>
+  <main>
+    <!-- HERO / PORTADA -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid reveal">
+        <div class="hero-card">
+          <h1 class="hero-title">Zayuri Aponte</h1>
+          <p class="hero-subtitle">"Diseñando mi futuro con constancia, creatividad y ganas de aprender."</p>
+          <p class="hero-cta">Estudiante en crecimiento | Futuro profesional comprometida</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projects">Ver proyectos</a>
+            <a class="btn outline" href="#contact">Contactar</a>
+          </div>
+        </div>
 
-<section>
-    <h2>Ruta Educativa</h2>
-    <ul>
-        <li>Finalizar el bachillerato.</li>
-        <li>Ingresar a la universidad.</li>
-        <li>Obtener experiencia profesional.</li>
-    </ul>
-</section>
+        <div class="hero-photo-card">
+          <!-- Reemplaza assets/profile.jpg con tu foto real -->
+          <img src="assets/profile.jpg" alt="Foto de perfil de Zayuri Aponte" class="profile-photo" />
+        </div>
+      </div>
+    </section>
 
-<section>
-    <h2>Mis Habilidades</h2>
-    <ul>
-        <li>Comunicación</li>
-        <li>Trabajo en equipo</li>
-        <li>Creatividad</li>
-        <li>Organización</li>
-    </ul>
-</section>
+    <!-- SOBRE MÍ -->
+    <section id="about" class="section about reveal">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="card">
+          <p>Soy una estudiante responsable, creativa, perseverante, organizada, empática y comprometida con mi crecimiento académico y profesional. Me encanta aprender cosas nuevas, colaborar con otros y buscar siempre mejorar en cada proyecto que realizo.</p>
+        </div>
+      </div>
+    </section>
 
-<button onclick="mostrarMensaje()">Ver Meta Profesional</button>
+    <!-- PERFIL PROFESIONAL -->
+    <section id="profile" class="section reveal">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Perfil Profesional</h2>
+          <div class="card">
+            <p>Me gusta aprender constantemente, trabajar en equipo, desarrollar nuevas habilidades y prepararme para alcanzar mis metas profesionales. Tengo curiosidad por la tecnología, la docencia y la investigación escolar; disfruto planear y ejecutar tareas con responsabilidad y creatividad.</p>
+          </div>
+        </div>
+        <div>
+          <h3>Fortalezas</h3>
+          <ul class="bullets">
+            <li>Responsabilidad y compromiso</li>
+            <li>Creatividad para resolver retos</li>
+            <li>Habilidad para trabajar en equipo</li>
+            <li>Organización y planificación</li>
+            <li>Actitud proactiva y empática</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- RUTA EDUCATIVA -->
+    <section id="education" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Ruta Educativa</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Corto plazo</h4>
+            <p>Terminar el bachillerato con buenos resultados académicos y participación en actividades escolares.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Mediano plazo</h4>
+            <p>Ingresar a la universidad y explorar carreras que se alineen con mis intereses profesionales.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Medio-Largo plazo</h4>
+            <p>Obtener certificaciones y experiencia profesional mediante prácticas y proyectos.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Largo plazo</h4>
+            <p>Desarrollar una carrera exitosa, contribuir en equipo y continuar aprendiendo a lo largo de la vida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- HABILIDADES -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Comunicación</h4>
+            <div class="progress" data-value="90"><span class="progress-bar"></span><span class="progress-value">90%</span></div>
+          </div>
+          <div class="skill-card">
+            <h4>Trabajo en equipo</h4>
+            <div class="progress" data-value="85"><span class="progress-bar"></span><span class="progress-value">85%</span></div>
+          </div>
+          <div class="skill-card">
+            <h4>Creatividad</h4>
+            <div class="progress" data-value="88"><span class="progress-bar"></span><span class="progress-value">88%</span></div>
+          </div>
+          <div class="skill-card">
+            <h4>Organización</h4>
+            <div class="progress" data-value="92"><span class="progress-bar"></span><span class="progress-value">92%</span></div>
+          </div>
+          <div class="skill-card">
+            <h4>Liderazgo</h4>
+            <div class="progress" data-value="75"><span class="progress-bar"></span><span class="progress-value">75%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METAS PROFESIONALES -->
+    <section id="goals" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Metas Profesionales</h2>
+        <div class="card">
+          <p>Mi aspiración es combinar la formación académica con experiencias prácticas para desempeñarme con seguridad en el mundo profesional. Busco oportunidades para adquirir certificaciones, participar en proyectos y construir una trayectoria que me permita contribuir positivamente en equipos y ambientes de trabajo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Proyectos Escolares</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media math">MAT</div>
+            <h3>Matemáticas</h3>
+            <p>Trabajos destacados con resolución paso a paso, aplicaciones de problemas y presentaciones explicativas.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media history">HIS</div>
+            <h3>Historia</h3>
+            <p>Investigaciones sobre eventos históricos, análisis crítico y proyectos visuales.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media tech">TEC</div>
+            <h3>Tecnología</h3>
+            <p>Prototipos, presentaciones sobre herramientas digitales y proyectos de tecnología educativa.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media research">INV</div>
+            <h3>Investigaciones</h3>
+            <p>Trabajos de investigación escolar con metodología, fuentes y conclusiones claras.</p>
+            <a class="card-link" href="#">Ver más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRÍCULUM -->
+    <section id="cv" class="section reveal">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Currículum Vitae</h2>
+          <div class="card">
+            <h4>Información académica</h4>
+            <ul>
+              <li>Bachillerato — En curso</li>
+              <li>Participación en actividades escolares y proyectos académicos</li>
+            </ul>
+
+            <h4>Habilidades</h4>
+            <p>Comunicación, trabajo en equipo, creatividad, organización y liderazgo.</p>
+
+            <h4>Logros</h4>
+            <ul>
+              <li>Proyectos destacados en materias clave</li>
+              <li>Participación en ferias escolares</li>
+            </ul>
+
+            <h4>Intereses</h4>
+            <p>Tecnología educativa, docencia, investigación y diseño de proyectos.</p>
+
+            <p><a class="btn primary" href="assets/CV-Zayuri-Aponte.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a></p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Resumen rápido</h3>
+          <div class="card">
+            <p>Soy una estudiante dedicada a construir una base sólida para mi futuro profesional, desarrollando habilidades útiles para el trabajo en equipo y la resolución creativa de problemas. Busco oportunidades para aprender y contribuir de manera significativa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="card contact-card">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <label>
+                Nombre
+                <input type="text" name="name" id="name" required placeholder="Tu nombre" />
+              </label>
+
+              <label>
+                Correo electrónico
+                <input type="email" name="email" id="email" required placeholder="tu@correo.com" />
+              </label>
+
+              <label class="full">
+                Mensaje
+                <textarea name="message" id="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+              </label>
+            </div>
+
+            <div class="form-cta">
+              <button class="btn primary" type="submit">Enviar mensaje</button>
+              <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand-footer">Zayuri Aponte</p>
+        <p class="muted">Portafolio estudiantil — Compromiso con el aprendizaje y la excelencia.</p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+        <a href="#" aria-label="GitHub (placeholder)">GitHub</a>
+        <a href="#" aria-label="Correo (placeholder)">Correo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
